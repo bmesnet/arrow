@@ -531,27 +531,27 @@ static void BM_DeltaBitPackingEncode(benchmark::State& state, NumberGenerator ge
 }
 
 static void BM_DeltaBitPackingEncode_Int32_Fixed(benchmark::State& state) {
-  BM_DeltaBitPackingEncode<Int32Type>(state, MakeDeltaBitPackingInputFixed<Int32Type>);
+//  BM_DeltaBitPackingEncode<Int32Type>(state, MakeDeltaBitPackingInputFixed<Int32Type>);
 }
 
 static void BM_DeltaBitPackingEncode_Int64_Fixed(benchmark::State& state) {
-  BM_DeltaBitPackingEncode<Int64Type>(state, MakeDeltaBitPackingInputFixed<Int64Type>);
+//  BM_DeltaBitPackingEncode<Int64Type>(state, MakeDeltaBitPackingInputFixed<Int64Type>);
 }
 
 static void BM_DeltaBitPackingEncode_Int32_Narrow(benchmark::State& state) {
-  BM_DeltaBitPackingEncode<Int32Type>(state, MakeDeltaBitPackingInputNarrow<Int32Type>);
+//  BM_DeltaBitPackingEncode<Int32Type>(state, MakeDeltaBitPackingInputNarrow<Int32Type>);
 }
 
 static void BM_DeltaBitPackingEncode_Int64_Narrow(benchmark::State& state) {
-  BM_DeltaBitPackingEncode<Int64Type>(state, MakeDeltaBitPackingInputNarrow<Int64Type>);
+//  BM_DeltaBitPackingEncode<Int64Type>(state, MakeDeltaBitPackingInputNarrow<Int64Type>);
 }
 
 static void BM_DeltaBitPackingEncode_Int32_Wide(benchmark::State& state) {
-  BM_DeltaBitPackingEncode<Int32Type>(state, MakeDeltaBitPackingInputWide<Int32Type>);
+//  BM_DeltaBitPackingEncode<Int32Type>(state, MakeDeltaBitPackingInputWide<Int32Type>);
 }
 
 static void BM_DeltaBitPackingEncode_Int64_Wide(benchmark::State& state) {
-  BM_DeltaBitPackingEncode<Int64Type>(state, MakeDeltaBitPackingInputWide<Int64Type>);
+//  BM_DeltaBitPackingEncode<Int64Type>(state, MakeDeltaBitPackingInputWide<Int64Type>);
 }
 
 BENCHMARK(BM_DeltaBitPackingEncode_Int32_Fixed)->Range(MIN_RANGE, MAX_RANGE);
@@ -580,27 +580,27 @@ static void BM_DeltaBitPackingDecode(benchmark::State& state, NumberGenerator ge
 }
 
 static void BM_DeltaBitPackingDecode_Int32_Fixed(benchmark::State& state) {
-  BM_DeltaBitPackingDecode<Int32Type>(state, MakeDeltaBitPackingInputFixed<Int32Type>);
+//  BM_DeltaBitPackingDecode<Int32Type>(state, MakeDeltaBitPackingInputFixed<Int32Type>);
 }
 
 static void BM_DeltaBitPackingDecode_Int64_Fixed(benchmark::State& state) {
-  BM_DeltaBitPackingDecode<Int64Type>(state, MakeDeltaBitPackingInputFixed<Int64Type>);
+//  BM_DeltaBitPackingDecode<Int64Type>(state, MakeDeltaBitPackingInputFixed<Int64Type>);
 }
 
 static void BM_DeltaBitPackingDecode_Int32_Narrow(benchmark::State& state) {
-  BM_DeltaBitPackingDecode<Int32Type>(state, MakeDeltaBitPackingInputNarrow<Int32Type>);
+//  BM_DeltaBitPackingDecode<Int32Type>(state, MakeDeltaBitPackingInputNarrow<Int32Type>);
 }
 
 static void BM_DeltaBitPackingDecode_Int64_Narrow(benchmark::State& state) {
-  BM_DeltaBitPackingDecode<Int64Type>(state, MakeDeltaBitPackingInputNarrow<Int64Type>);
+//  BM_DeltaBitPackingDecode<Int64Type>(state, MakeDeltaBitPackingInputNarrow<Int64Type>);
 }
 
 static void BM_DeltaBitPackingDecode_Int32_Wide(benchmark::State& state) {
-  BM_DeltaBitPackingDecode<Int32Type>(state, MakeDeltaBitPackingInputWide<Int32Type>);
+//  BM_DeltaBitPackingDecode<Int32Type>(state, MakeDeltaBitPackingInputWide<Int32Type>);
 }
 
 static void BM_DeltaBitPackingDecode_Int64_Wide(benchmark::State& state) {
-  BM_DeltaBitPackingDecode<Int64Type>(state, MakeDeltaBitPackingInputWide<Int64Type>);
+//  BM_DeltaBitPackingDecode<Int64Type>(state, MakeDeltaBitPackingInputWide<Int64Type>);
 }
 
 BENCHMARK(BM_DeltaBitPackingDecode_Int32_Fixed)->Range(MIN_RANGE, MAX_RANGE);
